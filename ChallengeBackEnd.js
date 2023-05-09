@@ -36,3 +36,5 @@ function copiar() {
     console.error("Error al copiar el: ", err);
   }
 }
+
+//No estes de chismoso viendo mi codigo XD
