@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="ChallengeBackEnd.js"></script>
+    <title>CIFRADO</title>
+  </head>
+  <body>
+    <header>
+      <img src="Images/Logo_Alura.png" alt="Logo alura" />
+    </header>
+    <main>
+      <section class="section_izquierda">
+        <textarea
+          class="textarea"
+          id="textoParaCifrar"
+          placeholder="ingrese texto aqui"
+        ></textarea>
+        <textarea
+          readonly
+          class="textarea2"
+          name="resultado"
+          id="textoEncriptado"
+          placeholder=""
+        ></textarea>
+        <div class="contenedor_botones">
+          <input
+            type="button"
+            value="Encriptar"
+            class="boton_encriptar"
+            id="textoEncripar"
+          />
+          <input
+            type="button"
+            value="Desencriptar"
+            class="boton_desencriptar"
+            id="textoDesencripar"
+          />
+          <input
+            type="button"
+            value="Copiar"
+            class="boton_copiar"
+            id="textoCopiar"
+          />
+        </div>
+      </section>
+
+      <section class="section_derecha">
+        <div class="contenedor_imagen">
+          <img src="Images/Personaje_Alura.png" alt="Muñeco" />
+        </div>
+        <div class="contenedor_texto">
+          <h4>ENCRIPTADOR ALURA</h4>
+        </div>
+        <div class="contenedor_texto2">
+          <p>
+            Este programa funciona para encriptar o desencriptar cualquier
+            mensaje.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>KSHRedMark</footer>
+    <script>
+      var botonEncriptar = document.querySelector("#textoEncripar");
+      botonEncriptar.onclick = encriptar;
+
+      var botonDesencriptar = document.querySelector("#textoDesencripar");
+      botonDesencriptar.onclick = desencriptar;
+
+      var botonCopiar = document.querySelector("#textoCopiar");
+      botonCopiar.onclick = copiar;
+    </script>
+  </body>
+</html>
